@@ -12,8 +12,8 @@ class DefaultBotBuilder(private val meepMeep: MeepMeep) {
         30.0, 30.0, Math.toRadians(60.0), Math.toRadians(60.0), 15.0
     )
 
-    private var width = 18.0
-    private var height = 18.0
+    private var width = 16.6
+    private var height = 14.0
 
     private var startPose = Pose2d()
     private var colorScheme: ColorScheme? = null
