@@ -17,7 +17,7 @@ import javax.swing.*
 import javax.swing.border.EtchedBorder
 
 
-open class MeepMeep @JvmOverloads constructor(private val windowSize: Int, fps: Int = 60) {
+open class MeepMeep @JvmOverloads constructor(private val windowSize: Int, fps: Int = 60, changing: Boolean) {
     companion object {
         @JvmStatic
         lateinit var DEFAULT_AXES_ENTITY: AxesEntity
@@ -99,6 +99,10 @@ open class MeepMeep @JvmOverloads constructor(private val windowSize: Int, fps: 
             ), 10, canvas.height - 8
         )
 
+        if(changing){
+            g.drawString("abc", 5, 10)
+        }
+
         g.dispose()
         canvas.bufferStrat.show()
     }
@@ -118,6 +122,7 @@ open class MeepMeep @JvmOverloads constructor(private val windowSize: Int, fps: 
             entityList.sortBy { it.zIndex }
             entityListDirty = false
         }
+
 
         val originalSize = entityList.size
         for (i in 0 until originalSize) {

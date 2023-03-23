@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MeepMeep.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MeepMeep.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MeepMeep.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MeepMeep.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.noahbres.meepmeep.MeepMeep.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.noahbres.meepmeep.MeepMeep.main.iml" />
     </modules>
   </component>
 </project>

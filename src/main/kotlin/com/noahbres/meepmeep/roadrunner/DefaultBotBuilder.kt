@@ -6,14 +6,14 @@ import com.noahbres.meepmeep.core.colorscheme.ColorScheme
 import com.noahbres.meepmeep.roadrunner.entity.RoadRunnerBotEntity
 import com.noahbres.meepmeep.roadrunner.trajectorysequence.TrajectorySequence
 
-class DefaultBotBuilder(private val meepMeep: MeepMeep) {
+class DefaultBotBuilder(private val meepMeep: MeepMeep, w: kotlin.Double, h: kotlin.Double) {
 
     private var constraints = Constraints(
         30.0, 30.0, Math.toRadians(60.0), Math.toRadians(60.0), 15.0
     )
 
-    private var width = 16.6
-    private var height = 14.0
+    private var width = w
+    private var height = h
 
     private var startPose = Pose2d()
     private var colorScheme: ColorScheme? = null
